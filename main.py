@@ -10,7 +10,7 @@ from passlib.context import CryptContext
 from jose import JWTError, jwt
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, String, Boolean, Integer, Float, DateTime, Text, ForeignKey, Table
+from sqlalchemy import Column, String, Boolean, Integer, Float, DateTime, Text, ForeignKey, Table, UniqueConstraint
 from sqlalchemy.orm import relationship, mapped_column, Mapped
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.sql import func
